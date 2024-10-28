@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>Carona 2-A </title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="logo">
+               Mazzo di fiori
+            </div> 
+            <div class="nav">
+                <a href="index H.html">Home</a>
+                <a href="index A.html">About us</a>
+                <a href="index B.html">Bouquets</a>
+                <a href="index C.html">Contact</a>
+            </nav>              
+        </div>
+    <div class="container">
+        <div class="text">
+          Our Beautiful Flower Bouquets
+        </div>
+        
+        <div class="bouquet-grid">
+         
+            <div class="bouquet-item">
+                <img src="E.jpg" alt="Bouquet 1">
+                <p>Daisy Flower</p>
+                <p class="price">Price: 2500</p>
+            </div>
+            
+            <div class="bouquet-item">
+                <img src="A.jpg" alt="Bouquet 2">
+                <p>Mix Flowers</p>
+                <p class="price">Price: 2500</p>
+            </div>
+           
+            <div class="bouquet-item">
+                <img src="B.jpg" alt="Bouquet 3">
+                <p>Blue Rose</p>
+                <p class="price">Price: 2500</p>
+            </div>
+            
+            <div class="bouquet-item">
+                <img src="C.jpg" alt="Bouquet 4">
+                <p>Red Rose</p>
+                <p class="price">Price: 2500</p>
+            </div>
+            <div class="bouquet-item">
+                <img src="D.jpg" alt="Bouquet 5">
+                <p>Hydrangea Flower</p>
+                <p class="price">Price: 2500</p>
+            </div>
+           
+            <div class="bouquet-item">
+                <img src="-1.jpg" alt="Bouquet 6">
+                <p>Sun flower</p>
+                <p class="price">Price: 2500</p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+
+</footer>
+</html>
+<style>
+#header{
+    width: 100%;
+    background-color:#e44b8d;
+    height: 100px;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    Font-weight:bold;
+    margin-left: 8%;
+    padding-top: 8px;
+    font-family:cursive;
+    width:20%;
+}
+
+.nav{
+    padding-left: 49%;  
+    margin-top:0%;
+}
+
+a{
+    text-decoration: none;
+    margin-right: 10px;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+    margin-top:3%;
+   
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 1px;
+    padding: 2px;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 900px;    
+    background-color:FFB6C1;
+    
+    
+}
+
+.text{
+    color: black;
+    margin-top:2px;
+    font-size:45px;
+    font-family:Serif;
+    
+         
+}
+
+.bouquet-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.bouquet-item {
+    background-color: hotpink;
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top:15%;
+    font-size:15px;
+}
+
+.bouquet-item:hover {
+    transform: translateY(-10px);
+}
+
+.bouquet-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.bouquet-item p {
+    font-size:25px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+footer{
+    background-color:#e2619f;
+    width: 100%;
+    height:70px;
+}
+@media screen and (max-width: 800px) {
+    .nav{
+        padding-left:40%;
+    }
+    a{
+        font-size:3vw;
+    }
+    .logo{
+        font-size:3vw;
+    }
+    .bouquet-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .bouquet-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
